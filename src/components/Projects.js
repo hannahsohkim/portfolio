@@ -14,45 +14,14 @@ const StyledLink = styled.a`
 
 const Container = styled.div`
   margin-left: 100px;
-  margin-right: 100px
+  margin-right: 100px;
 `
-// const List = styled.ul`
-//   list-style: none;
-//   padding: 0;
-//   margin: 0;
-//   display: -webkit-box;
-//   display: -moz-box;
-//   display: -ms-flexbox;
-//   display: -webkit-flex;
-//   display: flex;
-//   -webkit-flex-flow: row wrap;
-//   justify-content: space-around;
-// `
-
-// const ListItem = styled.li`
-//   margin-top: 20px;
-//   text-align: center;
-//   margin-bottom: 20px
-// `;
 
 const StyledImage = styled(Image)`
   padding-bottom: 40px;
   padding-top: 10px
 `
 
-// const Image2 = styled.img`
-//   width: 600px;
-//   height: 400px;
-//   padding-top: 30px
-//   padding-bottom: 50px
-// `
-// const Image3 = styled.img`
-//   width: 650px;
-//   height: 400px;
-//   padding-top: 30px
-//   padding-bottom: 50px;
-
-// `
 const Intro = styled.p`
   padding-bottom: 30px;
   padding-top: 30px;
@@ -63,13 +32,12 @@ const Wrapper = styled.div`
   padding-bottom: 20px
 `
 
-
 const Projects = () => (
   <Container>
     <Intro>Here are some applications I've worked on!</Intro>
     <Card.Group className='ui three cards'>
       <Card style={{width: '700px', height: '800px'}}>
-        <Card.Header><strong>BOOKSHELF</strong></Card.Header>
+        <Card.Header style={{fontSize: '20px'}}><strong>BOOKSHELF</strong></Card.Header>
         <Card.Content>
         <Wrapper>
         <Label>React.js</Label>
@@ -87,7 +55,7 @@ const Projects = () => (
       </Card>
 
       <Card style={{width: '700px', height: '800px'}}>
-        <Card.Header><strong>BANDLAND</strong></Card.Header>
+        <Card.Header style={{fontSize: '20px'}}><strong>BANDLAND</strong></Card.Header>
         <Card.Content>
         <Wrapper>
           <Label>Node.js</Label>
@@ -95,7 +63,7 @@ const Projects = () => (
           <Label>PostgreSQL</Label>
           <Label>Artillery</Label>
         </Wrapper>
-        <Image alt="Bandland" src={require('../assets/bandland.jpg')} />
+        <StyledImage alt="Bandland" src={require('../assets/bandland.jpg')} />
         <Card.Meta><StyledLink href="https://github.com/hannahsohkim/Bandland-Recommended" target="_blank" rel="noopener noreferrer">GITHUB REPO</StyledLink></Card.Meta>
         <br/>
 
@@ -105,7 +73,7 @@ const Projects = () => (
 
 
       <Card style={{width: '700px', height: '800px'}}>
-        <Card.Header><strong>CONTACT MANAGER</strong></Card.Header>
+        <Card.Header style={{fontSize: '20px'}}><strong>CONTACT MANAGER</strong></Card.Header>
         <Card.Content>
         <Wrapper>
           <Label>React.js</Label>

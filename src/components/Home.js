@@ -1,20 +1,19 @@
 import React from 'react';
-import { Table } from 'semantic-ui-react'
+import { Table, Icon } from 'semantic-ui-react'
 
 const Home = () => {
   return (
     <div>
       <p>Hello, my name is Hannah! I am a full stack developer based in San Jose, CA but definitely open to relocating for the right opportunity. I am currently looking for a Full Stack Developer or Front End Engineer role.</p>
       <br />
-      <h3>--- TECHNICAL SKILLS ---</h3>
-
-      <Table>
+        <h3> TECHNICAL SKILLS </h3>
+      <Table celled>
         <Table.Header>
           <Table.Row>
-            <Table.HeaderCell>Frontend</Table.HeaderCell>
-            <Table.HeaderCell>Backend</Table.HeaderCell>
-            <Table.HeaderCell>Testing/Deployment</Table.HeaderCell>
-            <Table.HeaderCell>Build/Developer Tools</Table.HeaderCell>
+            <Table.HeaderCell style={{backgroundColor: '#fcf9f7'}}>Frontend</Table.HeaderCell>
+            <Table.HeaderCell style={{backgroundColor: '#fcf9f7'}}>Backend</Table.HeaderCell>
+            <Table.HeaderCell style={{backgroundColor: '#fcf9f7'}}>Testing/Deployment</Table.HeaderCell>
+            <Table.HeaderCell style={{backgroundColor: '#fcf9f7'}}>Build/Developer Tools</Table.HeaderCell>
           </Table.Row>
         </Table.Header>
         <Table.Body>

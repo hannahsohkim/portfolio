@@ -25,6 +25,7 @@ const Footer = () => {
       </a>
       <br />
       <p>© 2019 Hannah Kim</p>
+      <br/>
     </div>
   )
 }

@@ -29,8 +29,7 @@ const StyledLink = styled(Link)`
 //   margin: 2px;
 // `
 
-const List = styled.ul`
-  list-style: none;
+const List = styled.div`
   padding-bottom: 20px;
 `
 
