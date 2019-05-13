@@ -21,20 +21,29 @@ const StyledLink = styled(Link)`
     text-shadow: 1px 1px 1px #ccc;
   }
 `
-// const ListItem = styled.li`
-//   display: inline;
-//   padding: 10px;
-//   background: #ffe5e5;
-//   border-radius: 5px;
-//   margin: 2px;
-// `
+const Wrapper = styled.div`
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+
+  @media only screen and (min-width : 768px) {
+    width: 75%;
+  };
+  @media only screen and (min-width : 992px) {
+    width: 50%;
+  }
+`
 
 const List = styled.div`
   padding-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+
 `
 
 const Header = () => (
-    <div>
+    // <div>
       <List>
       <StyledLink to="/">
         <Image alt="Profile" src={require('../assets/hannah.jpg')} />
@@ -45,7 +54,7 @@ const Header = () => (
         <Button style={{backgroundColor: '#ffe5e5'}}><StyledLink to='/life'>LIFE</StyledLink></Button>
         <Button style={{backgroundColor: '#ffe5e5'}}><StyledLink to='/contact'>CONTACT</StyledLink></Button>
       </List>
-    </div>
+    // </div>
   );
 
 export default Header;

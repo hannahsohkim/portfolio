@@ -36,7 +36,7 @@ const Projects = () => (
   <Container>
     <Intro>Here are some applications I've worked on!</Intro>
     <Card.Group className='ui three cards'>
-      <Card style={{width: '700px', height: '800px'}}>
+      <Card style={{width: '400px'}}>
         <Card.Header style={{fontSize: '20px'}}><strong>BOOKSHELF</strong></Card.Header>
         <Card.Content>
         <Wrapper>
@@ -54,7 +54,7 @@ const Projects = () => (
         </Card.Content>
       </Card>
 
-      <Card style={{width: '700px', height: '800px'}}>
+      <Card style={{width: '400px'}}>
         <Card.Header style={{fontSize: '20px'}}><strong>BANDLAND</strong></Card.Header>
         <Card.Content>
         <Wrapper>
@@ -72,7 +72,7 @@ const Projects = () => (
       </Card>
 
 
-      <Card style={{width: '700px', height: '800px'}}>
+      <Card style={{width: '400px'}}>
         <Card.Header style={{fontSize: '20px'}}><strong>CONTACT MANAGER</strong></Card.Header>
         <Card.Content>
         <Wrapper>

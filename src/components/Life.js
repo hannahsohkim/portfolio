@@ -1,10 +1,15 @@
 import React from 'react';
 import { Card, Image } from 'semantic-ui-react';
+import styled from 'styled-components';
 
-
+const Wrapper = styled.div`
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+`
 
 const Life = () => (
-  <div>
+  <Wrapper>
     <p>Here's a glimpse into my life through pictures!</p>
     <Card.Group>
       <Card>
@@ -16,7 +21,7 @@ const Life = () => (
      </Card>
 
      <Card>
-      <Image fluid src={require('../assets/cece.jpg')} />
+      <Image src={require('../assets/cece.jpg')} />
       <Card.Content>
         <Card.Meta>My other dog, Cece!</Card.Meta>
         <Card.Description>We adopted Cece a couple months before Sunny. She was an abandoned puppy on a farm in Central Cal.</Card.Description>
@@ -55,9 +60,7 @@ const Life = () => (
       </Card.Content>
      </Card>
     </Card.Group>
-
-
-  </div>
+  </Wrapper>
 )
 
 export default Life;
