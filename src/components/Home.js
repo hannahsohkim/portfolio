@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, Icon } from 'semantic-ui-react'
+import { Table } from 'semantic-ui-react'
 
 const Home = () => {
   return (
