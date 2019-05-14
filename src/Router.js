@@ -26,12 +26,10 @@ const PortfolioRouter = () => (
   <Router>
     <Wrapper>
       <Header />
-      <Route exact path="/" component={App} >
         <Route path="/projects" component={Projects} />
         <Route path="/life" component={Life} />
         <Route exact path="/" component={Home} />
         <Route path="/contact" component={Contact} />
-      </Route>
       <br />
       <br />
       <br />
