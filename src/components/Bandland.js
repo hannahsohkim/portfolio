@@ -46,14 +46,16 @@ class Bandland extends React.Component {
 
           <p style={{textAlign: 'center', fontSize: '20px', paddingTop: '40px'}}><StyledLink href="https://github.com/hannahsohkim/Bandland-Recommended" target="_blank" rel="noopener noreferrer"><strong>GITHUB REPO</strong></StyledLink></p>
         </Header.Content>
-        <Modal.Content>
+        <Modal.Content scrolling>
         <p style={{textAlign: 'center', paddingBottom: '25px', marginRight:'50px', marginLeft: '50px', fontSize: '15px'}}>Bandland is a platform for artists to share their music and for fans to discover new music and support their favorite artists. I was tasked with taking a legacy codebase and reworking the backend to handle higher traffic and data. I tested and benchmarked two databases, PostgreSQL and Cassandra, and decided to redesign the backend using PostgreSQL. I generated and seeded 10M+ records, optimized query times to be under 1ms, and stress tested the app to handle 1000 requests per second.</p>
+        <br />
         <hr />
         <br />
 
           <StyledImage alt="Bandland" src={require('../assets/bandland.jpg')} />
           <StyledImage alt="Bandland" src={require('../assets/postgres.jpg')} />
-          <StyledImage alt="Bandland" src={require('../assets/cassandra.jpg')} />
+          <StyledImage alt="Bandland" src={require('../assets/getrequest.jpg')} />
+          <StyledImage alt="Bandland" src={require('../assets/postrequest.jpg')} />
           <Modal.Description>
 
           </Modal.Description>

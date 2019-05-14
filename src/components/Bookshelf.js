@@ -49,9 +49,11 @@ class Bookshelf extends React.Component {
 
           <p style={{textAlign: 'center', fontSize: '20px', paddingTop: '40px'}}><StyledLink href="https://github.com/hannahsohkim/Bookshelf-Reviews" target="_blank" rel="noopener noreferrer"><strong>GITHUB REPO</strong></StyledLink></p>
         </Header.Content>
-        <Modal.Content>
-        <p style={{textAlign: 'center', paddingBottom: '25px', marginRight:'50px', marginLeft: '50px', fontSize: '15px'}}>Bookshelf is a social catalogue and database for books. Users can review and rate books, find books or authors, and interact with one another. I was tasked with the reviews service, a full stack microservice that leverages React to conditionally render and filter reviews by rating. At the end, my team members and I brought together our individual microservices into an integrated applicaton.</p>
-        <hr />
+          <Modal.Content scrolling>
+          <p style={{textAlign: 'center', paddingBottom: '25px', marginRight:'50px', marginLeft: '50px', fontSize: '15px'}}>Bookshelf is a social catalogue and database for books. Users can review and rate books, find books or authors, and interact with one another. I was tasked with the reviews service, a full stack microservice that leverages React to conditionally render and filter reviews by rating. At the end, my team members and I brought together our individual microservices into an integrated applicaton.</p>
+          <br/>
+          <hr />
+          <br />
 
           <StyledImage className="ui large" alt="Bookshelf" src={require('../assets/bookshelf2.jpg')} />
           <StyledImage className="ui medium" alt="Bookshelf" src={require('../assets/bookshelf.jpg')} />
