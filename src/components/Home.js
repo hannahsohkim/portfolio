@@ -4,7 +4,7 @@ import { Table } from 'semantic-ui-react'
 const Home = () => {
   return (
     <div>
-      <p>Hello, my name is Hannah! I am a full stack developer based in San Jose, CA but definitely open to relocating for the right opportunity. I am currently looking for a Full Stack Developer or Front End Engineer role.</p>
+      <p>Hello, my name is Hannah! I am a <strong>Full Stack Developer</strong> based in the Bay Area, but definitely open to relocating for the right opportunity. I am currently looking for a Full Stack Developer or Front End Engineer role.</p>
       <br />
         <h3> TECHNICAL SKILLS </h3>
       <Table celled>

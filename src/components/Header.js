@@ -27,12 +27,6 @@ const List = styled.div`
   text-align: center;
   width: 100%;
   margin: 0 auto;
-  @media only screen and (min-width : 768px) {
-    width: 75%;
-  };
-  @media only screen and (min-width : 992px) {
-    width: 50%;
-  }
 `
 
 const Header = () => (
