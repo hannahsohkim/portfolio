@@ -20,7 +20,7 @@ const StyledLink = styled.a`
 const Contact = () => {
   return (
     <Wrapper>
-      <p>I'm open to any location and I would love to chat about any opportunity you may have! Feel free to email me at
+      <p style={{fontSize: '15px'}}>I'm open to any location and I would love to chat about any opportunity you may have! Feel free to email me at
         <StyledLink href="mailto:hannahsohkim@gmail.com" target="_blank" rel="noopener noreferrer">
           <strong> hannahsohkim@gmail.com </strong>
         </StyledLink>

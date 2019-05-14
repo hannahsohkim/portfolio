@@ -45,7 +45,7 @@ class ContactManager extends React.Component {
 
           </Wrapper>
 
-          <p style={{textAlign: 'center', fontSize: '20px', paddingTop: '40px'}}><StyledLink href="https://github.com/hannahsohkim/contact-manager" target="_blank" rel="noopener noreferrer">GITHUB REPO</StyledLink></p>
+          <p style={{textAlign: 'center', fontSize: '20px', paddingTop: '40px'}}><StyledLink href="https://github.com/hannahsohkim/contact-manager" target="_blank" rel="noopener noreferrer"><strong>GITHUB REPO</strong></StyledLink></p>
         </Header.Content>
         <Modal.Content scrolling>
         <p style={{textAlign: 'center', paddingBottom: '25px', marginRight:'50px', marginLeft: '50px', fontSize: '15px'}}>A simple contact management app that allows a user to view all contacts, add a new contact, edit an existing contact, and delete a contact. I created this project to experiment with React's Context API as a state management solution and to play with Semantic UI's styling. The add, delete, and edit functionalities all have a pop up modal.</p>

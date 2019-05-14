@@ -32,7 +32,7 @@ const List = styled.div`
 const Header = () => (
   <List>
     <StyledLink to="/">
-      <Image alt="Profile" src={require('../assets/hannah.jpg')} />
+      <Image alt="Profile" src={require('../assets/hannah.jpg')}/>
       <Title>HANNAH KIM</Title>
     </StyledLink>
       <Button style={{backgroundColor: '#ffe5e5'}}><StyledLink to='/'>ABOUT</StyledLink></Button>
