@@ -52,6 +52,8 @@ class Bandland extends React.Component {
         <br />
 
           <StyledImage alt="Bandland" src={require('../assets/bandland.jpg')} />
+          <StyledImage alt="Bandland" src={require('../assets/postgres.jpg')} />
+          <StyledImage alt="Bandland" src={require('../assets/cassandra.jpg')} />
           <Modal.Description>
 
           </Modal.Description>
