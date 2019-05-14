@@ -1,10 +1,22 @@
 import React from 'react';
 import { Table } from 'semantic-ui-react'
+import Resume from '../assets/hannah-resume.pdf';
+import styled from 'styled-components';
 
+const StyledLink = styled.a`
+  text-decoration: none;
+  color: #2f0909;
+  &:focus, &:hover {
+    color: #696969
+  }
+`
 const Home = () => {
   return (
     <div>
-      <p>Hello, my name is Hannah! I am a <strong>Full Stack Developer</strong> based in the Bay Area, but definitely open to relocating for the right opportunity. I am currently looking for a Full Stack Developer or Front End Engineer role.</p>
+      <p style={{fontSize: '15px'}}>Hello, my name is Hannah! I am a <strong><em>Full Stack Developer</em></strong> based in the Bay Area, but definitely open to relocating for the right opportunity. I am currently looking for a Full Stack Developer or Front End Engineer role. Feel free to download or take a look at my resume
+      <StyledLink href={Resume} target="_blank" rel="noopener noreferrer"><strong> here. </strong></StyledLink>
+      </p>
+
       <br />
         <h3> TECHNICAL SKILLS </h3>
       <Table celled>
