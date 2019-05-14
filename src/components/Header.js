@@ -21,11 +21,12 @@ const StyledLink = styled(Link)`
     text-shadow: 1px 1px 1px #ccc;
   }
 `
-const Wrapper = styled.div`
+
+const List = styled.div`
+  padding-bottom: 20px;
   text-align: center;
   width: 100%;
   margin: 0 auto;
-
   @media only screen and (min-width : 768px) {
     width: 75%;
   };
@@ -34,27 +35,17 @@ const Wrapper = styled.div`
   }
 `
 
-const List = styled.div`
-  padding-bottom: 20px;
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-
-`
-
 const Header = () => (
-    // <div>
-      <List>
-      <StyledLink to="/">
-        <Image alt="Profile" src={require('../assets/hannah.jpg')} />
-        <Title>HANNAH KIM</Title>
-      </StyledLink>
-        <Button style={{backgroundColor: '#ffe5e5'}}><StyledLink to='/'>ABOUT</StyledLink></Button>
-        <Button style={{backgroundColor: '#ffe5e5'}}><StyledLink to='/projects'>PROJECTS</StyledLink></Button>
-        <Button style={{backgroundColor: '#ffe5e5'}}><StyledLink to='/life'>LIFE</StyledLink></Button>
-        <Button style={{backgroundColor: '#ffe5e5'}}><StyledLink to='/contact'>CONTACT</StyledLink></Button>
-      </List>
-    // </div>
-  );
+  <List>
+    <StyledLink to="/">
+      <Image alt="Profile" src={require('../assets/hannah.jpg')} />
+      <Title>HANNAH KIM</Title>
+    </StyledLink>
+      <Button style={{backgroundColor: '#ffe5e5'}}><StyledLink to='/'>ABOUT</StyledLink></Button>
+      <Button style={{backgroundColor: '#ffe5e5'}}><StyledLink to='/projects'>PROJECTS</StyledLink></Button>
+      <Button style={{backgroundColor: '#ffe5e5'}}><StyledLink to='/life'>LIFE</StyledLink></Button>
+      <Button style={{backgroundColor: '#ffe5e5'}}><StyledLink to='/contact'>CONTACT</StyledLink></Button>
+  </List>
+);
 
 export default Header;
