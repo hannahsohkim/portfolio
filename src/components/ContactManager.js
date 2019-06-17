@@ -36,7 +36,7 @@ class ContactManager extends React.Component {
         onClose={this.handleClose && this.props.toggle}
         closeIcon
       >
-        <Header style={{fontSize: '30px', textAlign: 'center'}}>BOOKSHELF</Header>
+        <Header style={{fontSize: '30px', textAlign: 'center'}}>CONTACT MANAGER</Header>
         <Header.Content>
           <Wrapper>
             <Label>React.js</Label>
