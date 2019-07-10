@@ -30,38 +30,37 @@ class ContactManager extends React.Component {
   render() {
     return(
       <div>
-            return (
-      <Modal
-        open={this.state.open}
-        onClose={this.handleClose && this.props.toggle}
-        closeIcon
-      >
-        <Header style={{fontSize: '30px', textAlign: 'center'}}>CONTACT MANAGER</Header>
-        <Header.Content>
-          <Wrapper>
-            <Label>React.js</Label>
-            <Label>React Context API</Label>
-            <Label>Semantic UI</Label>
+        <Modal
+          open={this.state.open}
+          onClose={this.handleClose && this.props.toggle}
+          closeIcon
+        >
+          <Header style={{fontSize: '30px', textAlign: 'center'}}>CONTACT MANAGER</Header>
+          <Header.Content>
+            <Wrapper>
+              <Label>Javascript</Label>
+              <Label>React.js</Label>
+              <Label>React Context API</Label>
+              <Label>Semantic UI</Label>
+            </Wrapper>
 
-          </Wrapper>
+            <p style={{textAlign: 'center', fontSize: '20px', paddingTop: '40px'}}><StyledLink href="https://github.com/hannahsohkim/contact-manager" target="_blank" rel="noopener noreferrer"><strong>GITHUB REPO</strong></StyledLink></p>
+          </Header.Content>
+          <Modal.Content scrolling>
+          <p style={{textAlign: 'center', paddingBottom: '25px', marginRight:'50px', marginLeft: '50px', fontSize: '15px'}}>A simple contact management app that allows a user to view all contacts, add a new contact, edit an existing contact, and delete a contact. I created this project to experiment with React's Context API as a state management solution and to play with Semantic UI's styling. The add, delete, and edit functionalities all have a pop up modal.</p>
+          <br/>
+          <hr />
 
-          <p style={{textAlign: 'center', fontSize: '20px', paddingTop: '40px'}}><StyledLink href="https://github.com/hannahsohkim/contact-manager" target="_blank" rel="noopener noreferrer"><strong>GITHUB REPO</strong></StyledLink></p>
-        </Header.Content>
-        <Modal.Content scrolling>
-        <p style={{textAlign: 'center', paddingBottom: '25px', marginRight:'50px', marginLeft: '50px', fontSize: '15px'}}>A simple contact management app that allows a user to view all contacts, add a new contact, edit an existing contact, and delete a contact. I created this project to experiment with React's Context API as a state management solution and to play with Semantic UI's styling. The add, delete, and edit functionalities all have a pop up modal.</p>
-        <br/>
-        <hr />
+            <StyledImage alt="Contact Manager" src={require('../assets/contactmanager.jpg')} />
+            <StyledImage alt="Contact Manager" src={require('../assets/add.jpg')} />
+            <StyledImage alt="Contact Manager" src={require('../assets/delete.jpg')} />
+            <Modal.Description>
 
-          <StyledImage alt="Contact Manager" src={require('../assets/contactmanager.jpg')} />
-          <StyledImage alt="Contact Manager" src={require('../assets/add.jpg')} />
-          <StyledImage alt="Contact Manager" src={require('../assets/delete.jpg')} />
-          <Modal.Description>
-
-          </Modal.Description>
-        </Modal.Content>
-      </Modal>
-  )
-      </div>
+            </Modal.Description>
+          </Modal.Content>
+        </Modal>
+      )
+    </div>
     )
   }
 }

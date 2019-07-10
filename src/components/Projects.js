@@ -4,6 +4,7 @@ import { Card } from 'semantic-ui-react'
 import Bookshelf from './Bookshelf'
 import Bandland from './Bandland'
 import ContactManager from './ContactManager'
+import Weather from './Weather'
 
 
 const Container = styled.div`
@@ -17,19 +18,12 @@ const Intro = styled.p`
   font-size: 18px
 `
 
-
 class Projects extends React.Component {
-  constructor(props) {
-    super(props);
-    this.bookshelfToggle = this.bookshelfToggle.bind(this);
-    this.bandlandToggle = this.bandlandToggle.bind(this);
-    this.contactToggle = this.contactToggle.bind(this);
-  }
-
   state = {
     bookshelf: true,
     bandland: true,
-    contact: true
+    contact: true,
+    weather: true
   }
 
   bookshelfToggle = () => {
@@ -50,9 +44,15 @@ class Projects extends React.Component {
     })
   }
 
+  weatherToggle = () => {
+    this.setState({
+      weather: !this.state.weather
+    })
+  }
+
   render () {
-    const { bookshelfToggle, bandlandToggle, contactToggle } = this;
-    const { bookshelf, bandland, contact } = this.state;
+    const { bookshelfToggle, bandlandToggle, contactToggle, weatherToggle } = this;
+    const { bookshelf, bandland, contact, weather } = this.state;
 
     if (!bookshelf) {
       console.log('bookshelf')
@@ -62,6 +62,10 @@ class Projects extends React.Component {
     } else if (!bandland) {
       return (
         <Bandland toggle={bandlandToggle} />
+      )
+    } else if (!weather) {
+      return (
+        <Weather toggle={weatherToggle} />
       )
     } else if (!contact) {
       return (
@@ -79,12 +83,21 @@ class Projects extends React.Component {
               Bookshelf is a full stack application, a social catalogue and database for books.
             </Card.Content>
           </Card>
+
           <Card onClick={bandlandToggle} style={{color: '#696969'}}>
             <Card.Header style={{color: '#434343'}}><strong>Bandland</strong></Card.Header>
             <Card.Content>
               Bandland is a platform for artists to share their music and for fans to support them.
             </Card.Content>
           </Card>
+
+          <Card onClick={weatherToggle} style={{color: '#696969'}}>
+            <Card.Header style={{color: '#434343'}}><strong>Weather App</strong></Card.Header>
+            <Card.Content>
+              United States Weather App allows users to input a city and displays weather data for the current day.
+            </Card.Content>
+          </Card>
+
           <Card onClick={contactToggle} style={{color: '#696969'}}>
             <Card.Header style={{color: '#434343'}}><strong>Contact Manager</strong></Card.Header>
             <Card.Content>
@@ -94,9 +107,8 @@ class Projects extends React.Component {
         </Card.Group>
       </Container>
     )
+  }
 }
-}
-
 
 
 export default Projects;

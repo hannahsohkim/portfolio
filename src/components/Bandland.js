@@ -37,6 +37,7 @@ class Bandland extends React.Component {
         <Header style={{fontSize: '30px', textAlign: 'center'}}>BANDLAND</Header>
         <Header.Content>
           <Wrapper>
+            <Label>Javascript</Label>
             <Label>Node.js</Label>
             <Label>Express</Label>
             <Label>PostgreSQL</Label>
@@ -56,9 +57,7 @@ class Bandland extends React.Component {
           <StyledImage alt="Bandland" src={require('../assets/postgres.jpg')} />
           <StyledImage alt="Bandland" src={require('../assets/getrequest.jpg')} />
           <StyledImage alt="Bandland" src={require('../assets/postrequest.jpg')} />
-          <Modal.Description>
 
-          </Modal.Description>
         </Modal.Content>
       </Modal>
   )

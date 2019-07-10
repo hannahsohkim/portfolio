@@ -39,7 +39,8 @@ class Bookshelf extends React.Component {
         <Header style={{fontSize: '30px', textAlign: 'center'}}>BOOKSHELF</Header>
         <Header.Content>
           <Wrapper>
-          <Label>React.js</Label>
+            <Label>Javascript</Label>
+            <Label>React.js</Label>
             <Label>Node.js</Label>
             <Label>Express</Label>
             <Label>MySQL</Label>
@@ -57,9 +58,6 @@ class Bookshelf extends React.Component {
 
           <StyledImage className="ui large" alt="Bookshelf" src={require('../assets/bookshelf2.jpg')} />
           <StyledImage className="ui medium" alt="Bookshelf" src={require('../assets/bookshelf.jpg')} />
-          <Modal.Description>
-
-          </Modal.Description>
         </Modal.Content>
       </Modal>
   )
